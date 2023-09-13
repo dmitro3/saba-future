@@ -5,7 +5,6 @@ import { currentDate } from "@/utils/ConvertDate";
 import "@biconomy/web3-auth/dist/src/style.css";
 import { useEffect } from "react";
 import syncCustInfo from "../service/auth";
-import PageLoading from "./LoadingPage/PageLoading";
 
 export default function BiconomyWallet() {
     const { account, socialLoginSDK, provider, smartAccount } = useAccountStore();
@@ -64,5 +63,5 @@ export default function BiconomyWallet() {
         connectWallet();
     }, []);
 
-    return <PageLoading />;
+    return <></>;
 }
